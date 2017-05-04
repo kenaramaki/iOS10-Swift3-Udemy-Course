@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A7CF9F851EB8148900C7FD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF9F841EB8148900C7FD4E /* AppDelegate.swift */; };
-		A7CF9F871EB8148900C7FD4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF9F861EB8148900C7FD4E /* ViewController.swift */; };
+		A7CF9F871EB8148900C7FD4E /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF9F861EB8148900C7FD4E /* CalculatorViewController.swift */; };
 		A7CF9F8A1EB8148900C7FD4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CF9F881EB8148900C7FD4E /* Main.storyboard */; };
 		A7CF9F8C1EB8148900C7FD4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CF9F8B1EB8148900C7FD4E /* Assets.xcassets */; };
 		A7CF9F8F1EB8148900C7FD4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CF9F8D1EB8148900C7FD4E /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		A7CF9F811EB8148900C7FD4E /* RetroCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CF9F841EB8148900C7FD4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7CF9F861EB8148900C7FD4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7CF9F861EB8148900C7FD4E /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		A7CF9F891EB8148900C7FD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7CF9F8B1EB8148900C7FD4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CF9F8E1EB8148900C7FD4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 				A7CF9F961EBA9E6600C7FD4E /* Minecraft.ttf */,
 				A7CF9F981EBA9F6500C7FD4E /* btn.wav */,
 				A7CF9F841EB8148900C7FD4E /* AppDelegate.swift */,
-				A7CF9F861EB8148900C7FD4E /* ViewController.swift */,
+				A7CF9F861EB8148900C7FD4E /* CalculatorViewController.swift */,
 				A7CF9F881EB8148900C7FD4E /* Main.storyboard */,
 				A7CF9F8B1EB8148900C7FD4E /* Assets.xcassets */,
 				A7CF9F8D1EB8148900C7FD4E /* LaunchScreen.storyboard */,
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7CF9F871EB8148900C7FD4E /* ViewController.swift in Sources */,
+				A7CF9F871EB8148900C7FD4E /* CalculatorViewController.swift in Sources */,
 				A7CF9F851EB8148900C7FD4E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
