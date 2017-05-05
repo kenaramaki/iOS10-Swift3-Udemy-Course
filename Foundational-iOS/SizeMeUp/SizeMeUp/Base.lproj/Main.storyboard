@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SizeMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eKC-4k-aJo">
+                                <rect key="frame" x="0.0" y="59" width="568" height="261"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GvY-0N-Gsq">
+                                        <rect key="frame" x="0.0" y="28" width="568" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GvY-0N-Gsq" id="M6V-8X-OWv">
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XuU-D9-nvs">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put a text here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-PU-4Ko">
+                                        <rect key="frame" x="228.5" y="8" width="111.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and another one here..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sw-ca-Rv7">
+                                        <rect key="frame" x="423.5" y="76" width="177" height="24"/>
+                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cIg-PU-4Ko" firstAttribute="centerX" secondItem="XuU-D9-nvs" secondAttribute="centerX" id="S7y-Sg-3HT"/>
+                                    <constraint firstItem="7sw-ca-Rv7" firstAttribute="top" secondItem="cIg-PU-4Ko" secondAttribute="bottom" constant="8" id="VLr-Ln-0QL"/>
+                                    <constraint firstItem="7sw-ca-Rv7" firstAttribute="centerX" secondItem="XuU-D9-nvs" secondAttribute="centerX" id="bT5-Rw-lgt"/>
+                                    <constraint firstItem="cIg-PU-4Ko" firstAttribute="top" secondItem="XuU-D9-nvs" secondAttribute="top" constant="8" id="sru-rf-WPb">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="59" id="zW7-XX-Jgh">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="7sw-ca-Rv7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="7sw-ca-Rv7"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XuU-D9-nvs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MG9-NG-Tb1"/>
+                            <constraint firstItem="eKC-4k-aJo" firstAttribute="top" secondItem="XuU-D9-nvs" secondAttribute="bottom" id="PWg-2h-oYM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eKC-4k-aJo" secondAttribute="bottom" id="T2k-d5-xGi"/>
+                            <constraint firstAttribute="trailing" secondItem="eKC-4k-aJo" secondAttribute="trailing" id="UhS-3V-Mwy"/>
+                            <constraint firstAttribute="trailing" secondItem="XuU-D9-nvs" secondAttribute="trailing" id="fPH-JF-Gua"/>
+                            <constraint firstItem="XuU-D9-nvs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hTN-H5-dZV"/>
+                            <constraint firstItem="eKC-4k-aJo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zV7-SV-ZPa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80.859375" y="164.71449487554904"/>
+        </scene>
+    </scenes>
+</document>
