@@ -307,6 +307,7 @@
 				A7CF9F951EB8148900C7FD4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

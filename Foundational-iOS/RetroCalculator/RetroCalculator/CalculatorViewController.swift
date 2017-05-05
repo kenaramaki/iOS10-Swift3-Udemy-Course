@@ -79,15 +79,23 @@ class CalculatorViewController: UIViewController {
                 rightValStr = runningNumber
                 runningNumber = ""
                 
-                if currentOperation == Operation.Multiply {
-                    result = "\(Double(leftValStr)! * Double(rightValStr)!)"
-                } else if currentOperation == Operation.Divide {
-                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
-                } else if currentOperation == Operation.Subtract {
-                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
-                } else if currentOperation == Operation.Add {
-                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                if let leftVal = Double(leftValStr) {
+                    
+                    if let rightVal = Double(rightValStr) {
+                        
+                        if currentOperation == Operation.Multiply {
+                            result = "\(leftVal * rightVal)"
+                        } else if currentOperation == Operation.Divide {
+                            result = "\(leftVal / rightVal)"
+                        } else if currentOperation == Operation.Subtract {
+                            result = "\(leftVal - rightVal)"
+                        } else if currentOperation == Operation.Add {
+                            result = "\(leftVal + rightVal)"
+                        }
+                    }
+                    
                 }
+                
                 
                 /*
                 switch currentOperation {
@@ -152,6 +160,17 @@ class CalculatorViewController: UIViewController {
     @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(operation: currentOperation)
     }
+    
+    @IBAction func clearPressed(_ sender: Any) {
+        
+        currentOperation = Operation.Empty
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        result = ""
+        outputLbl.text = "0"
+    }
+    
     
 }
 
