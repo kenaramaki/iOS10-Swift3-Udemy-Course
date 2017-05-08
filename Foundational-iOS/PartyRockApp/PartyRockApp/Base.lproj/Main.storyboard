@@ -85,7 +85,7 @@
                                 <rect key="frame" x="0.0" y="210" width="320" height="358"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="lWY-zh-fGP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="94" id="lWY-zh-fGP" customClass="PartyCell" customModule="PartyRockApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lWY-zh-fGP" id="cOt-eX-a5J">
@@ -115,6 +115,10 @@
                                                 <constraint firstItem="Id3-hP-Rlf" firstAttribute="leading" secondItem="7Kt-As-cU3" secondAttribute="trailing" constant="8" id="zgW-A5-IhK"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="7Kt-As-cU3" id="pl6-b4-lFs"/>
+                                            <outlet property="videoTitle" destination="Id3-hP-Rlf" id="Mj4-x1-mmf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -134,6 +138,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="A1y-SS-FFO" id="74T-aN-P7Q"/>
                         <segue destination="CFe-A4-MxC" kind="showDetail" identifier="VideoVC" id="hGV-78-U6V"/>
                     </connections>
                 </viewController>
